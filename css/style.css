@@ -1,0 +1,122 @@
+#map {
+    height: 50vw;
+    margin-left: -100%;
+    width: 80vw;
+    transition: all .9s;
+    border: 3px black solid;
+    border-radius: 2vw;
+}
+body{
+    background: #FFFAFA;
+}
+body{
+    margin: 0px;
+}
+ul.roll{
+    width: 70%;
+    margin-left: 12%;
+    transition: all 1.5s;
+    list-style: none;
+    height: 60px;
+}
+nav{
+    height: 70px;
+    margin-bottom: 50px;
+    width: 100%;
+    background: #D4BCBC;
+}
+button.local{
+    background: url('../img/save.png');
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    border: none;
+    float: right;
+}
+button.map{
+    background: url('../img/map.png');
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    border: none;
+}
+img.icon{
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
+}
+li.roll{
+    transition: all 0.4s;
+    font-size: 100%;
+    opacity: 0.4;
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    transform: translateY(25%);
+}
+li#bar{
+    position: relative;
+    top: -60px;
+    margin-left: 33%;
+}
+li#restaurant{
+    position: relative;
+    top: -120px;
+    margin-left: 66%;
+}
+li.roll:hover{
+    font-size: 150%;
+    transform: translateY(0%);
+    opacity: 1;
+    background: rgb(238, 235, 235)
+}
+p.resp{
+    margin-left: -100%;
+}
+div.values{
+    text-align: center;
+}
+div.values p{
+    color: grey;
+    font-size: 150%;
+    overflow: auto;
+}
+h1{
+    text-align: center;
+    color: grey;
+}
+button.favo{
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: -100%;
+    font-size: 24px;
+    width: 30%;
+    position: relative;
+    margin-bottom: 50px;
+}
+table.tab{
+    width: 80%;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+table.tab td{
+    text-align: center;
+}
+td.nametab, td.enderecotab, td.numerotab{
+    width: 33%;
+    border-top: 1px solid black;
+    overflow: auto;
+}
+button.clear{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 30px;
+    border-radius: 20px;    
+    font-size: 150%;
+}

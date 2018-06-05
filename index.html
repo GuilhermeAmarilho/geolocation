@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encontro Perfeito</title>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <nav>
+    <button class="local"></button>
+    <img src="img/icon.png" class="icon" alt="">
+    <button class="map"></button>
+    </nav>  
+    <h1>Escolha um local para seu encontro!</h1>
+    <ul class="roll">
+       <li class="roll" id="park">praça</li>
+       <li class="roll" id="bar">bar</li>
+       <li class="roll" id="restaurant">restaurante</li> 
+    </ul>
+    <div id="map"></div>
+    <p class="resp"></p>
+    <div class="values"></div>
+    <button class="favo">Quer favoritar esse local?</button>
+    <script>
+      if (navigator.serviceWorker.controller) {
+          console.log('[PWA Builder] active service worker found, no need to register')
+      } 
+      else {
+        //Register the ServiceWorker
+        navigator.serviceWorker.register('sw.js', {
+            scope: './'
+        }).then(function(reg) {
+            console.log('Service worker has been registered for scope:'+ reg.scope);
+        });
+      }
+    </script>
+    <script src="js/script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5q8aXNCxnsJSxQNG50ibziSNosXQCSNQ&libraries=places">
+    </script>
+  </body>
+</html>
